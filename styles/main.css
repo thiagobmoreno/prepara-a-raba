@@ -9,6 +9,10 @@
 	font-weight: bold;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 body {
 	font-family: "gilroy", "Helvetica", sans-serif;
 	font-size: 16px;
