@@ -475,7 +475,7 @@ footer figure figcaption {
 	}
 }
 
-@media (max-aspect-ratio: 1/1) or (max-width: 800px) {
+@media (max-aspect-ratio: 1/1), (max-width: 800px) {
 	body {
 		font-size: 14px;
 	}
