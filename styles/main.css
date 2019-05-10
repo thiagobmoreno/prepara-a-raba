@@ -437,20 +437,15 @@ footer figure figcaption {
 		font-size: 12px;
 	}
 
-	h2 {
+	#pesquisa h2 {
 		font-size: 1.3rem;
 	}
 
-	h2 span {
+	#pesquisa h2 span {
 		font-size: 1.2rem;
 	}
 }
 
-@media (max-width: 600px) {
-	body {
-		font-size: 12px;
-	}
-}
 
 @media (max-width: 400px) {
 	body {
