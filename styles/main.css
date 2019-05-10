@@ -1,0 +1,610 @@
+@font-face {
+	font-family: "gilroy";
+	src: url("../fonts/gilroy-light.otf");
+}
+
+@font-face {
+	font-family: "gilroy";
+	src: url("../fonts/gilroy-extrabold.otf");
+	font-weight: bold;
+}
+
+body {
+	font-family: "gilroy", "Helvetica", sans-serif;
+	font-size: 16px;
+}
+
+p {
+	margin-bottom: 12pt;
+}
+
+body h2 {
+	padding: 10pt 0 10pt 0;
+	border-top: 1pt #FFFFFF solid;
+	border-bottom: 1pt #FFFFFF solid;
+}
+
+strong {
+	font-weight: bold;
+}
+
+section {
+	min-height: 100vh;
+	padding-bottom: 5vh;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+input[type=text] {
+	background-color: #A93130;
+	color: #FFFFFF;
+	border-style: none;
+	font-size: 1.2em;
+	margin-right: 2%;
+}
+
+input[type=radio] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+input[type=submit] {
+	background-color: #A93130;
+	color: #FFFFFF;
+	border-style: none;
+	font-size: 1.4rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 2vh;
+}
+
+#intro {
+	background: url(../bg/bg05.png) no-repeat center center;
+	background-size: cover;
+}
+
+#header_mobile {
+	display: none;
+}
+
+#title {
+	position: relative;
+	top: 40vh;
+	left: 44%;
+	width: 40%;
+	color: #FFFFFF;
+}
+
+#title img {
+	width: 90%;
+	margin-top: -10pt;
+	margin-left: 10%;
+}
+
+#title p:nth-child(1) {
+	font-size: 1.1em;
+}
+
+#title p:nth-child(3) {
+	text-align: right;
+	font-size: 1.3em;
+	margin-top: -1em;
+}
+
+#participar {
+	position: relative;
+	bottom: -20vh;
+	font-family: "gilroy", "Helvetica", sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: left;
+	color: #E03743;
+	border-style: none;
+	background: none;
+	cursor: pointer;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#participar span {
+	font-size: 3em;
+	transform: rotate(90deg);
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 2px 0 0 #E03743, -2px 0 0 #E03743, 0 2px 0 #E03743, 0 -2px 0 #E03743, 1px 1px #E03743, -1px -1px 0 #E03743, 1px -1px 0 #E03743, -1px 1px 0 #E03743;
+}
+
+#participar:hover {
+	color: #FFFFFF;
+	text-shadow: 2px 0 0 #E03743, -2px 0 0 #E03743, 0 2px 0 #E03743, 0 -2px 0 #E03743, 1px 1px #E03743, -1px -1px 0 #E03743, 1px -1px 0 #E03743, -1px 1px 0 #E03743;
+}
+
+#oque {
+	color: white;
+}
+
+#oque div {
+	width: 45%;
+	position: relative;
+	top: 10vh;
+	left: 7%;
+	text-align: right;
+}
+
+#oque h2 {
+	font-size: 3.2rem;
+	margin-bottom: 32pt;
+}
+
+#oque h2 span {
+	font-size: 2.4rem;	
+}
+
+#pesquisa div {
+	position: relative;
+	float: left;
+	width: 40%;
+	margin: 0 4% 0 4%;
+	top: 30vh;
+}
+
+#pesquisa div:nth-child(1) {
+	text-align: right;
+}
+
+#pesquisa h2 {
+	font-size: 2.4rem;
+	margin-bottom: 20pt;
+	color: #FFFFFF;
+
+	border-color: #0088B5;
+}
+
+#pesquisa h2 span {
+	font-size: 1.8rem;
+}
+
+#escopo h2 {
+	font-size: 1.8rem;
+	border-color: #0088B5;
+	color: #0088B5;
+	margin-bottom: 18pt;
+}
+
+#escopo p {
+	color: #0088B5;
+}
+
+#criterios {
+	position: relative;
+	top: 5vh;
+}
+
+#criterios h2 {
+	width: 26%;
+	float: left;
+	text-align: right;
+}
+
+#criterios li {
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	vertical-align: top;
+}
+
+#criterios li img {
+	width: 50%;
+	margin-bottom: 0.5vh;
+}
+
+#criterios p:nth-child(3) {
+	margin-top: 2vh;
+	margin-right: 3%;
+	text-align: right;
+}
+
+#container_mapa {
+	margin-top: 15vh;
+	padding-left: 5%;
+}
+
+#container_mapa img {
+	display: inline-block;
+	width: 40%;
+}
+
+#container_mapa div {
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-left: 5%;
+}
+
+#qea h2 {
+	display: inline-block;
+	position: relative;
+	width: 40%;
+	top: 20vh;
+	color: #FFFFFF;
+	font-size: 3.2rem;
+	font-weight: bold;
+	float: left;
+	text-align: right;
+}
+
+#qea ul {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	top: 20vh;
+	margin-left: 1%;
+}
+
+#qea h3 {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#qea li {
+	margin-bottom: 3vh;
+	padding: 0.5vh 0 0.5vh 0;
+	border-top: 1pt solid;
+	border-bottom: 1pt solid;
+	border-color: #A93130;
+}
+
+#qea li p {
+	position: relative;
+	left: 15%;
+	top: 1vh;
+	display: none;
+	color: white;
+}
+
+#qea li:hover p {
+	display: block;
+}
+
+#formulario div {
+	width: 60%;
+	margin: 5vh auto 0 auto;
+}
+
+#formulario h2 {
+	text-align: center;
+	font-size: 3.2rem;
+	color: #E03743;
+	font-weight: bold;
+	border-color: #A93130;
+	border-width: 2pt;
+	padding: 0.5vh 0 0.5vh 0;
+}
+
+#formulario form {
+	margin-top: 5vh;
+}
+
+#formulario p {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #E03743;
+	width: 15%;
+	display: inline-block;
+}
+
+#formulario input {
+	width: 30%;
+	display: inline-block;
+}
+
+#formulario form p:nth-child(7) {
+	display: block;
+	width: 100%;
+	margin-top: 2vh;
+}
+
+.radio_container {
+	display: inline-block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: #E03743;
+	font-weight: bold;
+	margin: 0 5% 0 5%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+form .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #E03743;
+	color: #FFFFFF;
+	border-radius: 50%;
+}
+
+.radio_container:hover .checkmark {
+	background-color: #A93130;
+}
+
+.radio_container input:checked ~ .checkmark {
+	background-color: #FFFFFF;
+}
+
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.radio_container input:checked ~ .checkmark::after {
+	display:block;
+}
+
+.radio_container .checkmark::after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #E03743;
+}
+
+footer {
+	background-color: #A93130;
+	color: #FFFFFF;
+}
+
+footer div {
+	display: inline-block;
+	width: 30%;
+	margin-top: 10vh;
+	margin-left: 2%;
+	vertical-align: top;
+}
+
+footer h2 {
+	text-align: right;
+	font-size: 1.6rem;
+}
+
+footer h3 {
+	color: #E03743;
+	margin-bottom: 4vh;
+	font-weight: bold;
+}
+
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer h4 {
+	font-weight: bold;
+	margin-top: 2vh;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer li {
+	margin-bottom: 11pt;
+}
+
+footer figure {
+	margin-top: 5vh;
+}
+
+footer figure img {
+	width: 20%;
+	display: inline-block;
+}
+
+footer figure figcaption {
+	display: inline-block;
+	margin-left: 3%;
+	vertical-align: top;
+}
+
+@media (min-width: 1500px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		font-size: 10px;
+	}
+}
+
+@media (aspect-ratio: 5/4) {
+	#title p:nth-child(3) {
+		margin-top: 2em;
+	}
+
+	#container_mapa {
+		margin-top: 20vh;
+	}
+
+	#formulario div {
+		margin-top: 20vh;
+	}
+}
+
+@media (max-aspect-ratio: 1/1) or (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+
+	#intro {
+		background: url(../bg/bg_mobile.png) !important;
+		background-size: cover !important;
+	}
+
+	#intro div {
+		display: block;
+	}
+
+	#header_mobile img{
+		object-fit: cover;
+		width: 100%;
+	}
+
+	#title {
+		position: static;
+		width: 90%;
+		margin: -12vh 5% 0 5%;
+	}
+
+	#title img {
+		width: 90%;
+		margin-left: 0;
+	}
+
+	#participar {
+		display: none;
+	}
+
+	#oque div {
+		width: 70%;
+		margin-left: 5%;
+	}
+
+	#oque h2 {
+		font-size: 1.8rem;
+	}
+
+	#oque h2 span {
+		font-size: 1.4rem;
+	}
+
+	#pesquisa div {
+		float: none;
+		width: 80%;
+		margin-left: 5%;
+		top: 5vh;
+	}
+
+	#pesquisa h2 {
+		font-size: 1.4rem
+	}
+
+	#pesquisa h2 span {
+		font-size: 1.2rem;
+	}
+
+	#criterios h2 {
+		float: none;
+		width: 60%;
+		font-size: 1.4rem;
+	}
+
+	#criterios li {
+		width: 20%;
+		margin: 0 2% 0 2%;
+	}
+
+	#container_mapa {
+		margin-top: 10vh;
+	}
+
+	#container_mapa img {
+		width: 60%;
+		margin: 0 19% 0 19%;
+	}
+
+	#container_mapa h2 {
+		font-size: 1.2rem;
+		margin-top: 2vh;
+	}
+
+	#container_mapa div {
+		width: 90%;
+		margin: 0 3% 0 3%;
+	}
+
+	#qea h2 {
+		display: block;
+		position: static;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		font-size: 1.4rem;
+		width: 90%;
+	}
+
+	#qea ul {
+		display: block;
+		position: static;
+		width: 90%;
+	}
+
+	#qea li p {
+		left: 2%;
+	}
+
+	.radio_container {
+		display: block;
+		margin-top: 2vh;
+	}
+
+	#formulario div {
+		width: 80%;
+	}
+
+	#formulario h2 {
+		font-size: 1.4rem;
+	}
+
+	#formulario p,input {
+		width: 100%;
+		font-size: 1.2rem;
+		margin-top: 1vh;
+		display: block;
+	}
+
+	#formulario input {
+		width: 100%;
+	}
+
+	footer div {
+		width: 90%;
+		display: block;
+		margin: 0;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		margin-left: 5%;
+	}
+}
