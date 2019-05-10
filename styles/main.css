@@ -437,6 +437,10 @@ footer figure figcaption {
 		font-size: 12px;
 	}
 
+	#pesquisa div {
+		top: 20vh;
+	}
+
 	#pesquisa h2, #oque h2, #qea h2 {
 		font-size: 1.3rem;
 	}
