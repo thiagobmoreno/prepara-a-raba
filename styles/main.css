@@ -10,7 +10,7 @@
 }
 
 @-ms-viewport{
-  width: device-width;
+	width: device-width;
 }
 
 body {
@@ -80,7 +80,7 @@ input[type=submit] {
 
 #title {
 	position: relative;
-	top: 40vh;
+	top: 42vh;
 	left: 44%;
 	width: 40%;
 	color: #FFFFFF;
@@ -88,7 +88,7 @@ input[type=submit] {
 
 #title img {
 	width: 90%;
-	margin-top: -10pt;
+	margin-top: -40pt;
 	margin-left: 10%;
 }
 
@@ -103,8 +103,8 @@ input[type=submit] {
 }
 
 #participar {
-	position: relative;
-	bottom: -20vh;
+	position: fixed;
+	top: 80vh;
 	font-family: "gilroy", "Helvetica", sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -231,6 +231,18 @@ input[type=submit] {
 	margin-left: 5%;
 }
 
+#container_mapa div img {
+	float: left;
+	margin-left: 35%;
+	width: 5%;
+}
+
+#detail{
+	width: 70%;
+	font-size: 0.9em;
+	margin-left: 40%;
+}
+
 #qea h2 {
 	display: inline-block;
 	position: relative;
@@ -314,58 +326,8 @@ input[type=submit] {
 	margin-top: 2vh;
 }
 
-.radio_container {
-	display: inline-block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 1.2rem;
-	color: #E03743;
-	font-weight: bold;
-	margin: 0 5% 0 5%;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-form .checkmark {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #E03743;
-	color: #FFFFFF;
-	border-radius: 50%;
-}
-
-.radio_container:hover .checkmark {
-	background-color: #A93130;
-}
-
-.radio_container input:checked ~ .checkmark {
-	background-color: #FFFFFF;
-}
-
-.checkmark::after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.radio_container input:checked ~ .checkmark::after {
-	display:block;
-}
-
-.radio_container .checkmark::after {
-	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: #E03743;
+#formulario form input[type="submit"] {
+	display: block;
 }
 
 footer {
@@ -497,12 +459,17 @@ footer figure figcaption {
 	#title {
 		position: static;
 		width: 90%;
-		margin: -12vh 5% 0 5%;
+		margin: -15vh 5% 0 5%;
 	}
 
 	#title img {
+		margin-top: -20pt;
 		width: 90%;
 		margin-left: 0;
+	}
+
+	#title p:nth-child(1) {
+		text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
 	}
 
 	#participar {
