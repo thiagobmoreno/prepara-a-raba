@@ -1,18 +1,14 @@
 <?php
 $para = "morenobthiago@gmail.com";
 
-$feedback_page = "../index.html";
-$error_page = "../error_message.html";
-$thankyou_page = "../thank_page.html";
-
 $email = $_POST["EMAIL"];
-$phone_number = $_POST["TELEFONE"];
+$phone = $_POST["TELEFONE"];
 $name = $_POST["NOME"];
 
 $msg =
 "Nome: " . $name . "\r\n" . 
-"E-mail: " . $email_address . "\r\n" .
-"Telefone: " . $phone_number . "\r\n";
+"E-mail: " . $email . "\r\n" .
+"Telefone: " . $phone. "\r\n";
 
 function isInjected($str) {
 	$injections = array('(\n+)',
@@ -33,11 +29,11 @@ function isInjected($str) {
 	}
 }
 
-if (!isset($_REQUEST['email_address'])) {
+if (!isset($_POST['email'])) {
 header( "Location: feedback_page" );
-} elseif (empty($name) || empty($email_address) || empty($phone_number))  {
+} elseif (empty($name) || empty($email) || empty($phone))  {
 header( "Location: $error_page" );
-} elseif ( isInjected($email_address) || isInjected($name)  || isInjected($phone_number) ) {
+} elseif ( isInjected($email) || isInjected($name)  || isInjected($phone) ) {
 header( "Location: $error_page" );
 } else {
 
