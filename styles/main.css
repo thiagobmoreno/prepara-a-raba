@@ -284,10 +284,6 @@ input[type=submit] {
 	color: white;
 }
 
-#qea li:hover p {
-	display: block;
-}
-
 #formulario div {
 	width: 60%;
 	margin: 5vh auto 0 auto;
