@@ -28,16 +28,18 @@
 				$(this).siblings("p").slideToggle();			
 			});
 			
-			var position = $(document).scrollTop();
-			
-			var positionform = $("#formulario").offset().top;
-			
-			console.log(position);
-			console.log(positionform);
-			
-			if (position > positionform) {
-				$("#participar").hide();
-			};			
+			$(window).scroll(function() {			
+				var position = $(document).scrollTop();
+
+				var positionform = $("#formulario").offset().top;
+
+				console.log(position);
+				console.log(positionform);
+
+				if (position > positionform) {
+					$("#participar").hide();
+				};
+			});
 		});		
 	</script>
 </head>
