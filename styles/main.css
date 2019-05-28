@@ -104,17 +104,24 @@ input[type=submit] {
 }
 
 #participar {
+	width: 0; 
+	height: 0; 
+	border-bottom: 100px solid #fff; 
+	border-right: 100px solid transparent;
 	position: fixed;
-	top: 80vh;
-	font-family: "gilroy", "Helvetica", sans-serif;
+	bottom: 0;
+	cursor: pointer;
+}
+
+#participar p {
 	font-size: 1.4em;
 	font-weight: bold;
 	text-align: left;
 	color: #E03743;
 	border-style: none;
 	background: none;
-	cursor: pointer;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
 }
 
 #participar img {
