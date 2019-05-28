@@ -118,9 +118,8 @@ input[type=submit] {
 }
 
 #participar img {
-	width: 60%;
+	width: 40%;
 	margin: 0 10% 0 10%;
-	text-align: center;
 	text-shadow: 2px 0 0 #E03743, -2px 0 0 #E03743, 0 2px 0 #E03743, 0 -2px 0 #E03743, 1px 1px #E03743, -1px -1px 0 #E03743, 1px -1px 0 #E03743, -1px 1px 0 #E03743;
 }
 
@@ -435,6 +434,12 @@ footer figure figcaption {
 
 	#formulario div {
 		margin-top: 20vh;
+	}
+}
+
+@media (max-height: 400px) {
+	section {
+		min-height: 500px;	
 	}
 }
 
