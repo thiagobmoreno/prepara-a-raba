@@ -104,10 +104,7 @@ input[type=submit] {
 }
 
 #participar {
-	width: 0; 
-	height: 0; 
-	border-bottom: 100px solid #fff; 
-	border-right: 100px solid rgba(255,255,255,0.0);
+	background-image: url("../images/canto.png");
 	position: fixed;
 	bottom: 0;
 	cursor: pointer;
