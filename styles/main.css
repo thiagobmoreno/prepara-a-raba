@@ -456,6 +456,7 @@ footer figure figcaption {
 	#intro {
 		background: url(../bg/bg_mobile.png) !important;
 		background-size: cover !important;
+		padding-top: 0;
 	}
 
 	#intro div {
