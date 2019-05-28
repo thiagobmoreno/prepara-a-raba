@@ -104,10 +104,11 @@ input[type=submit] {
 }
 
 #participar {
-	background-image: url("../images/canto.png");
+	background: url("../images/canto.png") no-repeat;
 	position: fixed;
 	bottom: 0;
 	cursor: pointer;
+	border: none;
 }
 
 #participar p {
