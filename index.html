@@ -27,6 +27,15 @@
 				$("#qea p").slideUp();
 				$(this).siblings("p").slideToggle();			
 			});
+			
+			var position = $(window).scrollTop();
+			
+			var positionform = $(window).scrollTop($("#formulario").offset().top);
+			
+			if (position > positionform) {
+				$("participar").hide;
+			}
+			
 		});		
 	</script>
 </head>
