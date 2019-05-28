@@ -115,8 +115,6 @@ input[type=submit] {
 	font-weight: bold;
 	text-align: left;
 	color: #E03743;
-	border-style: none;
-	background: none;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 
 }
@@ -124,7 +122,6 @@ input[type=submit] {
 #participar img {
 	width: 40%;
 	margin: 0 10% 0 10%;
-	text-shadow: 2px 0 0 #E03743, -2px 0 0 #E03743, 0 2px 0 #E03743, 0 -2px 0 #E03743, 1px 1px #E03743, -1px -1px 0 #E03743, 1px -1px 0 #E03743, -1px 1px 0 #E03743;
 }
 
 #participar:hover {
