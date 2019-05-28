@@ -285,6 +285,10 @@ input[type=submit] {
 	color: white;
 }
 
+#formulario {
+	padding-top: 0;
+}
+
 #formulario div {
 	width: 60%;
 	margin: 5vh auto 0 auto;
