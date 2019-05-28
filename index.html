@@ -37,7 +37,9 @@
 				console.log(positionform);
 
 				if (position > positionform) {
-					$("#participar").toggle();
+					$("#participar").hide();
+				} else {
+					$("participar").show();				
 				};
 			});
 		});		
