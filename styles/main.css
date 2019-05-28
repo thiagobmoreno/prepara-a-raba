@@ -107,7 +107,7 @@ input[type=submit] {
 	width: 0; 
 	height: 0; 
 	border-bottom: 100px solid #fff; 
-	border-right: 100px solid rgba(0,0,0,0);
+	border-right: 100px solid rgba(0,0,0,1);
 	position: fixed;
 	bottom: 0;
 	cursor: pointer;
