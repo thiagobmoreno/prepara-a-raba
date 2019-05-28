@@ -1,13 +1,13 @@
 <?php
-$webmaster_email = "morenobthiago@gmail.com";
+$para = "morenobthiago@gmail.com";
 
 $feedback_page = "../index.html";
 $error_page = "../error_message.html";
 $thankyou_page = "../thank_page.html";
 
-$email_address = $_REQUEST["E-MAIL"];
-$phone_number = $_REQUEST["TELEFONE"];
-$name = $_REQUEST["NOME"];
+$email = $_POST["EMAIL"];
+$phone_number = $_POST["TELEFONE"];
+$name = $_POST["NOME"];
 
 $msg =
 "Nome: " . $name . "\r\n" . 
@@ -41,7 +41,7 @@ header( "Location: $error_page" );
 header( "Location: $error_page" );
 } else {
 
-	mail( "$webmaster_email", "Novo Cadastro PrEP Injetável", $msg );
+	mail( $para, "Novo Cadastro PrEP Injetável", $msg );
 
 	header( "Location: $thankyou_page" );
 }
