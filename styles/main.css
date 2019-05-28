@@ -109,13 +109,13 @@ input[type=submit] {
 	bottom: 0;
 	cursor: pointer;
 	border: none;
+	text-align: left;
 }
 
 #participar p {
 	margin-bottom: 3pt;
 	font-size: 1.4em;
 	font-weight: bold;
-	text-align: left;
 	color: #E03743;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 
