@@ -293,6 +293,14 @@ input[type=submit] {
 	margin: 5vh auto 0 auto;
 }
 
+#formulario p {
+	margin-top: 2vh;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #E03743;
+	text-align: center;
+}
+
 #formulario h2 {
 	text-align: center;
 	font-size: 3.2rem;
@@ -308,9 +316,6 @@ input[type=submit] {
 }
 
 #formulario form p {
-	font-weight: bold;
-	font-size: 1.2rem;
-	color: #E03743;
 	width: 15%;
 	display: inline-block;
 }
